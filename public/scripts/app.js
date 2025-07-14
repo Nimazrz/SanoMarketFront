@@ -201,10 +201,17 @@ window.addEventListener('scroll', () => {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
   if (currentScroll > lastScrollTop) {
-    navbar.classList.add('hidden');
+
+    const navbar = document.querySelector(".navbar");
+    if (navbar) {
+      navbar.classList.add("hidden");
+    }
+    
   } else {
+    if(navbar){
     navbar.classList.remove('hidden');
-  }
+
+  }}
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
@@ -483,8 +490,11 @@ lodingBtn?.addEventListener('click', () => {
   overlay.classList.add('active')
 })
 
-overlay?.addEventListener('click', () => lodingModal.classList.remove('active'))
-
+if (overlay && lodingModal) {
+  overlay.addEventListener('click', () => {
+    lodingModal.classList.remove('active');
+  });
+}
 
 
 // accordion
@@ -593,7 +603,4 @@ filterModalClose?.addEventListener('click'  , ()=> {
   searchOverlay.classList.remove('active')
   filterModal.classList.remove('active')
 })
-
-
-
 

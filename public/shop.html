@@ -337,62 +337,41 @@
                 <!-- Logo -->
                 <a href="index.html" class="flex flex-col text-center ml-20">
                     <span class="font-MorabbaMedium text-4xl flex items-center">
-                        <span class="text-blue-500">سانو</span> مارکت
+                        <span class="text-blue-500">کارین</span> شاپ
                     </span>
-                    <!-- <p class="font-DanaMedium text-gray-400"> خرید موبایل و لپ‌تاپ</p> -->
+                    <p class="font-DanaMedium text-gray-400"> خرید موبایل و لپ‌تاپ</p>
                 </a>
                 <!--  Action -->
                 <div class="flex items-center gap-x-3">
                     <!-- LOGIN -->
-                    <button class="hidden flex-center py-2 px-4  app-border rounded-full app-hover">
-                        <a href="#" class="flex items-center gap-x-2">
-                            <p>ورود | ثبت‌نام</p>
-                            <svg class="size-5">
-                                <use href="#arrow-left-end" />
-                            </svg>
-                        </a>
+                    <button id="login-btn" class="hidden flex-center py-2 px-4 app-border rounded-full app-hover">
+                    <a href="login.html" class="flex items-center gap-x-2">
+                        <p>ورود | ثبت‌نام</p>
+                        <svg class="size-5"><use href="#arrow-left-end" /></svg>
+                    </a>
                     </button>
                     <!-- Account Btn -->
-                    <button class="group relative flex-center py-2 px-4 app-border rounded-full app-hover delay-75">
-                        <a href="dashboard.html"  class="flex items-center gap-x-1">
-                            <svg class="size-5">
-                                <use href="#user" />
-                            </svg>
+                        <button id="account-btn" class="hidden group relative flex-center py-2 px-4 app-border rounded-full app-hover delay-75">
+                        <a href="dashboard.html" class="flex items-center gap-x-1">
+                            <svg class="size-5"><use href="#user" /></svg>
                             <p>حساب کاربری</p>
                         </a>
-                        <div
-                            class="absolute dark:border-none border border-gray-100 w-52 p-2 bg-white text-gray-900 dark:text-gray-100 flex flex-col gap-y-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-12 transition-all delay-100 dark:bg-gray-700 top-20 rounded-lg text-base shadow child:transition-all duration-300 child:py-1.5 child:px-2 z-30 child:rounded-lg child:w-full">
-                            <a href="dashboard-orders.html"
-                                class="flex items-center gap-x-2  hover:bg-blue-500 hover:text-gray-100">
-                                <svg class="h-5 w-5">
-                                    <use href="#user"></use>
-                                </svg>
-                                سفارشات من
+                        <div class="absolute w-52 p-2 bg-white text-gray-900 dark:text-gray-100 dark:bg-gray-700 rounded-lg text-base shadow z-30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-12 transition-all delay-100">
+                            <a href="dashboard-orders.html" class="flex items-center gap-x-2 hover:bg-blue-500 hover:text-white px-2 py-1.5 rounded-lg">
+                            <svg class="h-5 w-5"><use href="#user" /></svg> سفارشات من
                             </a>
-                            <a href="dashboard-messages.html"
-                                class="flex items-center gap-x-2  hover:bg-blue-500 hover:text-gray-100">
-                                <svg class="h-5 w-5">
-                                    <use href="#envelope"></use>
-                                </svg>
-                                لیست پیام ها
+                            <a href="dashboard-messages.html" class="flex items-center gap-x-2 hover:bg-blue-500 hover:text-white px-2 py-1.5 rounded-lg">
+                            <svg class="h-5 w-5"><use href="#envelope" /></svg> پیام‌ها
                             </a>
-                            <a href="dashboard-account.html"
-                                class="flex items-center gap-x-2  hover:bg-blue-500 hover:text-gray-100">
-                                <svg class="h-5 w-5">
-                                    <use href="#cog"></use>
-                                </svg>
-                                اطلاعات کاربری
+                            <a href="dashboard-account.html" class="flex items-center gap-x-2 hover:bg-blue-500 hover:text-white px-2 py-1.5 rounded-lg">
+                            <svg class="h-5 w-5"><use href="#cog" /></svg> اطلاعات کاربری
                             </a>
-                            <a href="#"
-                                class="flex items-center gap-x-2  hover:bg-red-500 dark:hover:bg-red-500 hover:text-gray-100">
-                                <svg class="h-5 w-5">
-                                    <use href="#arrow-left-end"></use>
-                                </svg>
-                                خروج از حساب
+                            <a href="#" id="logout-btn" class="flex items-center gap-x-2 hover:bg-red-500 text-red-500 hover:text-white px-2 py-1.5 rounded-lg">
+                            <svg class="h-5 w-5"><use href="#arrow-left-end" /></svg> خروج از حساب
                             </a>
                         </div>
-                    </button>
-                    <!-- Toggle theme -->
+                        </button>
+                                        <!-- Toggle theme -->
                     <button class="toggle-theme flex-center p-2 app-border rounded-full app-hover">
                         <svg class="inline-block dark:hidden size-6">
                             <use href="#moon" />
@@ -1163,7 +1142,7 @@
                 <!-- Logo -->
                 <a href="index.html" class="flex flex-col text-center">
                     <span class="font-MorabbaMedium text-3xl flex items-center">
-                        <span class="text-blue-500">سانو</span> شاپ
+                        <span class="text-blue-500">کارین</span> شاپ
                     </span>
                 </a>
                 <!-- Toggle theme -->
@@ -1268,7 +1247,7 @@
             </div>
             <!-- bottom Navbar-->
             <ul class="bottom-navbar">
-                <li class="dark:text-sky-400 text-blue-500 font-DanaMedium">
+                <li class="dark:text-sky-1 text-blue-500 font-DanaMedium">
                     <svg class="size-5">
                         <use href="#home" />
                     </svg>
@@ -1550,16 +1529,11 @@
                                 <use href="#x-mark"></use>
                             </svg>
                         </div>
-                        <ul class="flex w-full child:w-full child:text-center flex-col items-center justify-center divide-y divide-gray-300 dark:divide-gray-200/20 child:py-3">
-                            <li>مرتبط‌ترین</li>
-                            <li>پربازدیدترین</li>
-                            <li>جدیدترین</li>
-                            <li>گران‌ترین</li>
-                            <li>
-                                منتخب</li>
-                            <li>پیشنهاد خریداران</li>
-                            <li>
-                                سریع‌ترین ارسال</li>
+                        <ul id="mobile-sort-options" class="flex w-full child:w-full child:text-center flex-col items-center justify-center divide-y divide-gray-300 dark:divide-gray-200/20 child:py-3">
+                        <li data-order="">مرتبط‌ترین</li>
+                        <li data-order="-sold_count">پرفروش‌ترین</li>
+                        <li data-order="-created_at">جدیدترین</li>
+                        <li data-order="-ordering_price">گران‌ترین</li>
                         </ul>
                     </div>
                     <!-- FILTER BTN -->
@@ -1774,7 +1748,8 @@
                     </div>
                 </div>
                     </div>
-                    <span class="text-sm text-gray-400 ms-auto py-1.5 px-4">۱3,۰۴۰ کالا </span>
+                    <span id="product-count" class="text-sm text-gray-400 ms-auto py-1.5 px-4"></span>
+
                 </div>
                 <!-- TOP FILTER BOX -->
                 <div class="hidden lg:flex items-center justify-between  mb-6">
@@ -1785,16 +1760,16 @@
                         </svg>
                         <h2 class="font-DanaDemiBold text-gray-400">مرتب سازی :</h2>
                     </div>
-                    <ul
+                    <ul id="sort-options"
                         class="flex items-center gap-x-1 lg:gap-x-4 child:transition-all child:cursor-pointer child:rounded-lg child:px-1 child:py-1 child:text-sm child:lg:text-base">
-                        <li class="text-blue-500">محبوب ترین</li>
-                        <li class="text-gray-400">پرفروش ترین</li>
-                        <li class="text-gray-400">ارزان ترین</li>
-                        <li class="text-gray-400">گران ترین</li>
+                    <li class="text-blue-500" data-order="-average_rating">محبوب ترین</li>
+                    <li class="text-gray-400" data-order="-sold_count">پرفروش ترین</li>
+                    <li class="text-gray-400" data-order="ordering_price">ارزان ترین</li>
+                    <li class="text-gray-400" data-order="-ordering_price">گران ترین</li>
                     </ul>
                    </div>
-                    <span class="text-sm text-gray-400 end">۱۳,۰۴۰ کالا </span>
-                </div>
+                    <span id="product-count" class="text-sm text-gray-400 ms-auto py-1.5 px-4"></span>
+                    </div>
                 <!-- PRODUCTS -->
                 <div id="product-list" class="grid grid-cols-1 xxs:grid-cols-2 xs:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-3 xs:gap-2 sm:gap-4"></div>
 

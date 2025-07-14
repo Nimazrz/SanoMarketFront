@@ -6177,3 +6177,28 @@ img {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
+.megamenu_category {
+  max-height: auto;       /* ارتفاع منطقی برای اسکرول */
+  overflow-y: auto;
+  padding-right: 4px;      /* یه فاصله برای اسکرول‌بار */
+}
+
+/* استایل اسکرول برای کروم و سافاری */
+.megamenu_category::-webkit-scrollbar {
+  width: 5px;
+}
+
+.megamenu_category::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* searchbar
+
+.search-modal {
+  display: none;
+}
+.search-modal.active {
+  display: block;
+}

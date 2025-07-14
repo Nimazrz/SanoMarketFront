@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const specValueList = document.getElementById("spec-values");
   const relatedWrapper = document.getElementById("related-products-wrapper");
 
+  // اسلایدر موبایل
+const mobileSliderModal = document.querySelector(".mobile-slider-modal");
+const openThumbs = document.querySelectorAll("#image-thumbnails img");
+const mobileSliderWrapper = document.getElementById("mobile-slider-wrapper");
+const mobileSliderTitle = document.getElementById("mobile-slider-modal-title");
+const closeMobileSliderBtn = document.querySelector(".close-mobile-sliderModal");
+
+
   titleEl && (titleEl.textContent = product.name ?? "");
   sliderModalTitle && (sliderModalTitle.textContent = product.name ?? "");
   descriptionEl && (descriptionEl.textContent = product.description ?? "توضیحی ثبت نشده است.");

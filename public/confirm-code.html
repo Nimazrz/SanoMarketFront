@@ -77,16 +77,12 @@
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <p class="mb-2 text-gray-800 dark:text-gray-100 font-DanaMedium text-lg">کد تایید را وارد کنید</p>
         <form id="otp-form">
-          <label for="email" class="block text-sm/6 font-medium text-gray-500 dark:text-gray-300">
-            حساب کاربری با شماره موبایل 0922222222 وجود ندارد. برای ساخت حساب جدید، کد تایید برای این شماره ارسال
-            گردید.
-          </label>
+            <label id="confirm-message" class="block text-sm/6 font-medium text-gray-500 dark:text-gray-300"></label>
           <div dir="ltr" class="flex items-center justify-between gap-4 mt-5">
 
             <input type="text" class="otp-input" pattern="\d*" maxlength="1" />
             <input type="text" class="otp-input" maxlength="1" />
             <input type="text" class="otp-input " maxlength="1" />
-            <input type="text" class="otp-input" maxlength="1" />
             <input type="text" class="otp-input" maxlength="1" />
           </div>
           <div class="w-full mx-auto mt-8">
@@ -96,7 +92,7 @@
           </div>
         </form>
         <p class="login-timer_text">
-          مانده تا دریافت مجدد کد <span class="login-timer text-blue-500">3:00</span>
+          مانده تا دریافت مجدد کد <span class="login-timer text-blue-500">2:00</span>
         </p>
         <button class="resend-code">
           دریافت مجدد کد
@@ -108,7 +104,7 @@
     </div>
   </section>
 
-  <script src="./scripts/app.js"></script>
+  <script src="./scripts/confirm-code.js"></script>
 
 </body>
 
