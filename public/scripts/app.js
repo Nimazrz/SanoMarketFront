@@ -66,8 +66,9 @@ overlay?.addEventListener('click', () => {
   searchModal.classList.remove('active');
   searchButton.classList.remove('active');
   cart.classList.remove('active');
+if (citylistMenu) {
   citylistMenu.classList.remove('active');
-  mobileMenu.classList.remove('active')
+}  mobileMenu.classList.remove('active')
 });
 
 // Event Listener for Search Overlay Click

@@ -6194,7 +6194,7 @@ img {
   border-radius: 3px;
 }
 
-/* searchbar
+/* searchbar */
 
 .search-modal {
   display: none;
@@ -6202,3 +6202,60 @@ img {
 .search-modal.active {
   display: block;
 }
+
+
+#popular-categories {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 0.5rem; /* کمی بیشتر */
+  gap: 6rem; /* فاصله خیلی بزرگ بین آیتم‌ها */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#popular-categories::-webkit-scrollbar {
+  display: none;
+}
+
+#popular-categories a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+#popular-categories a img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+#popular-categories a:hover img {
+  filter: grayscale(70%);
+  opacity: 0.9;
+}
+
+#popular-categories a p {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  color: #333;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.dark #popular-categories a p {
+  color: #ccc;
+}
+
+
