@@ -75,7 +75,9 @@ if (citylistMenu) {
 searchOverlay?.addEventListener('click', () => {
   searchOverlay.classList.remove('active');
   searchModal.classList.remove('active');
-  sortModal.classList.remove('active')
+  if (sortModal) {
+    sortModal.classList.remove("active");
+  }
   filterModal.classList.remove('active')
 });
 
